@@ -21,3 +21,5 @@ ActiveRecord::Schema.define(version: 2019_12_31_210514) do
   end
 
 end
+
+# u = User.create :userid => "myuserid", :password => "mypasswd", :user_first_name => "test", :user_last_name => "testovich", :user_status => "mystatus", :user_type => "mytype"

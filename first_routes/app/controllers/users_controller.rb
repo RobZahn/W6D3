@@ -4,7 +4,7 @@ class UsersController < ApplicationController
     end
     
     def show
-        user = User.find(params[:id])
+        user = User.find_by(id: params[:id])
 
         render json: user
     end
@@ -38,7 +38,6 @@ class UsersController < ApplicationController
             render json: user.errors.full_messages, status: :unprocessable_entity
         end
     end
-
 
     private
 
